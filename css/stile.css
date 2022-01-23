@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'AmazObitaemOstrovItalic';
+  src: url(../fonts/AmazObitaemOstrovItalic.ttf);
+}
+
+@font-face {
+  font-family: 'slant';
+  src: url(../fonts/ObitaemOstrov.ttf);
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  background-image: url(../img/serie-soti-fon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 1024px;
+  min-height: 100vh;
+  -ms-grid-columns: 65% 35%;
+      grid-template-columns: 65% 35%;
+  -ms-grid-rows: auto auto auto 1fr;
+      grid-template-rows: auto auto auto 1fr;
+}
+
+body header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  margin: 30px 30px 0px 30px;
+  background-color: darkblue;
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(45deg, #eecfba, DeepSkyBlue);
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+body header h2 {
+  display: -ms-grid;
+  display: grid;
+  color: black;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'slant';
+}
+
+body header nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  justify-items: end;
+  padding-right: 50px;
+}
+
+body header nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body header nav ul li {
+  display: -ms-grid;
+  display: grid;
+  padding-left: 30px;
+}
+
+body header nav ul li a img {
+  height: 30px;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  margin: 30px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  grid-row: 2/5;
+}
+
+body main article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 5px 2px DarkGoldenRod;
+          box-shadow: 0 0 5px 2px DarkGoldenRod;
+  margin: 5px;
+}
+
+body main article h1 {
+  display: -ms-grid;
+  display: grid;
+  background: linear-gradient(45deg, #eecfba, DeepSkyBlue);
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  border-radius: 20px 20px 0px 0px;
+  padding: 10px;
+  color: black;
+  font-family: 'slant';
+}
+
+body main article h1 a {
+  padding: 10px;
+  color: black;
+  font-family: 'slant';
+}
+
+body main article p {
+  background: -webkit-gradient(linear, left bottom, left top, from(blue), to(Aqua));
+  background: linear-gradient(to top, blue, Aqua);
+  -webkit-transition: 10s;
+  transition: 10s;
+  -webkit-animation: background 20s infinite alternate;
+          animation: background 20s infinite alternate;
+  color: black;
+  border-radius: 0px 0px 20px 20px;
+  padding: 10px;
+  font-family: 'AmazObitaemOstrovItalic';
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+}
+
+body main article p img {
+  background-color: #fff;
+  float: left;
+  margin: 7px 7px 7px 7px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+body main article p a {
+  color: goldenrod;
+}
+
+body main article p a:hover {
+  color: #a106af;
+}
+
+body main article p :after {
+  color: #07fd1b;
+}
+
+body section {
+  display: -ms-grid;
+  display: grid;
+  margin: 30px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  background: -webkit-gradient(linear, left bottom, left top, from(blue), to(Aqua));
+  background: linear-gradient(to top, blue, Aqua);
+  -webkit-transition: 10s;
+  transition: 10s;
+  -webkit-animation: background 20s infinite alternate;
+          animation: background 20s infinite alternate;
+  color: black;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 5px 2px DarkGoldenRod;
+          box-shadow: 0 0 5px 2px DarkGoldenRod;
+  padding: 10px;
+  font-family: 'AmazObitaemOstrovItalic';
+}
+
+body aside {
+  display: -ms-grid;
+  display: grid;
+  margin: 30px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  background: -webkit-gradient(linear, left bottom, left top, from(blue), to(Aqua));
+  background: linear-gradient(to top, blue, Aqua);
+  -webkit-transition: 10s;
+  transition: 10s;
+  -webkit-animation: background 20s infinite alternate;
+          animation: background 20s infinite alternate;
+  color: black;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 5px 2px DarkGoldenRod;
+          box-shadow: 0 0 5px 2px DarkGoldenRod;
+  padding: 10px;
+  font-family: 'AmazObitaemOstrovItalic';
+}
+
+body footer {
+  display: -ms-grid;
+  display: grid;
+  margin: 30px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  background: -webkit-gradient(linear, left bottom, left top, from(blue), to(Aqua));
+  background: linear-gradient(to top, blue, Aqua);
+  -webkit-transition: 10s;
+  transition: 10s;
+  -webkit-animation: background 20s infinite alternate;
+          animation: background 20s infinite alternate;
+  color: black;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 5px 2px DarkGoldenRod;
+          box-shadow: 0 0 5px 2px DarkGoldenRod;
+  padding: 10px;
+  font-family: 'AmazObitaemOstrovItalic';
+  height: 50px;
+}
+
+body footer p {
+  display: -ms-grid;
+  display: grid;
+  font-family: 'AmazObitaemOstrovItalic';
+}
+
+@-webkit-keyframes background {
+  50% {
+    background: black;
+    -webkit-box-shadow: 0 -200px 100px -100px red inset;
+            box-shadow: 0 -200px 100px -100px red inset;
+    color: white;
+  }
+}
+
+@keyframes background {
+  50% {
+    background: black;
+    -webkit-box-shadow: 0 -200px 100px -100px red inset;
+            box-shadow: 0 -200px 100px -100px red inset;
+    color: white;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=stile.css.map */

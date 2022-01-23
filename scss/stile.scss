@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'AmazObitaemOstrovItalic';
+  src: url(../fonts/AmazObitaemOstrovItalic.ttf);
+}
+@font-face {
+  font-family: 'slant';
+  src: url(../fonts/ObitaemOstrov.ttf);
+}
+
+body {
+  display: grid;
+  background-image: url(../img/serie-soti-fon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 1024px;
+  min-height: 100vh;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: auto auto auto 1fr;
+
+  header {
+    display: grid;
+    grid-column: 1/3;
+    margin: 30px 30px 0px 30px;
+    background-color: darkblue;
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(45deg, #eecfba, DeepSkyBlue);
+    grid-template-columns: auto auto;
+    h2 {
+      display: grid;
+      color: black;
+      grid-column: 1/2;
+      text-align: center;
+      align-items: center;
+      font-family: 'slant';
+    }
+
+    nav {
+      display: grid;
+      grid-column: 2/3;
+      justify-items: end;
+      padding-right: 50px;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        li {
+          display: grid;
+          padding-left: 30px;
+          a {
+            img {
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    display: grid;
+    margin: 30px;
+    grid-column: 1/2;
+    grid-row: 2/5;
+
+    article {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      border-radius: 20px;
+      box-shadow: 0 0 5px 2px DarkGoldenRod;
+      margin: 5px;
+      h1 {
+        display: grid;
+        background: linear-gradient(45deg, #eecfba, DeepSkyBlue);
+        grid-column: 1/4;
+        grid-row: 1/2;
+        border-radius: 20px 20px 0px 0px;
+        padding: 10px;
+        color: black;
+        font-family: 'slant';
+        a {
+          padding: 10px;
+          color: black;
+          font-family: 'slant';
+        }
+      }
+      p {
+        background: linear-gradient(to top, blue, Aqua);
+        transition: 10s;
+        animation: background 20s infinite alternate;
+        color: black;
+        border-radius: 0px 0px 20px 20px;
+        padding: 10px;
+        font-family: 'AmazObitaemOstrovItalic';
+        letter-spacing: 1.5px;
+        line-height: 1.2;
+
+        img {
+          background-color: #fff;
+          float: left;
+          margin: 7px 7px 7px 7px;
+          border-radius: 10px;
+          width: 40%;
+        }
+        a {
+          color: goldenrod;
+        }
+        a:hover {
+          color: rgb(161, 6, 175);
+        }
+        :after {
+          color: rgb(7, 253, 27);
+        }
+      }
+    }
+  }
+  section {
+    display: grid;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background: linear-gradient(to top, blue, Aqua);
+    transition: 10s;
+    animation: background 20s infinite alternate;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px DarkGoldenRod;
+    padding: 10px;
+    font-family: 'AmazObitaemOstrovItalic';
+  }
+  aside {
+    display: grid;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background: linear-gradient(to top, blue, Aqua);
+    transition: 10s;
+    animation: background 20s infinite alternate;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px DarkGoldenRod;
+    padding: 10px;
+    font-family: 'AmazObitaemOstrovItalic';
+  }
+  footer {
+    display: grid;
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background: linear-gradient(to top, blue, Aqua);
+    transition: 10s;
+    animation: background 20s infinite alternate;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px DarkGoldenRod;
+    padding: 10px;
+    font-family: 'AmazObitaemOstrovItalic';
+    height: 50px;
+    p {
+      display: grid;
+      font-family: 'AmazObitaemOstrovItalic';
+    }
+  }
+}
+@keyframes background {
+  50% {
+    background: black;
+    box-shadow: 0 -200px 100px -100px red inset;
+    color: white;
+  }
+}
+a {
+  text-decoration: none;
+}

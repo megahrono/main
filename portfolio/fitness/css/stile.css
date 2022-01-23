@@ -1,0 +1,225 @@
+body {
+  color: #fff;
+  margin: 0%;
+}
+
+.box {
+  background: url(../img/4156728.png) no-repeat;
+  background-size: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 20% 60% 20%;
+      grid-template-rows: 20% 60% 20%;
+  clear: both;
+  min-width: 1024px;
+  min-height: 100vh;
+  max-height: 2000px;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 105px;
+      grid-template-columns: auto 105px;
+  font: 14px 'Noto Sans', sans-serif;
+}
+
+.navigetion {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-top: 62px;
+  gap: 120px;
+  width: auto;
+  padding: 1%;
+  border-bottom: 1px solid #fff;
+}
+
+.logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  width: 105px;
+  height: 105px;
+}
+
+main {
+  -ms-grid-row-align: unset;
+      align-self: unset;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-grid-columns: 1fr 410px;
+      grid-template-columns: 1fr 410px;
+  font: 14px 'Montserrat';
+}
+
+article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  justify-items: start;
+  margin-right: 100px;
+}
+
+h1 {
+  font-size: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 0%;
+}
+
+p {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 30px 0% 30px 0%;
+}
+
+.button {
+  font-family: 'Raleway', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../img/Shape_png.png) center no-repeat;
+  height: 100%;
+  background-repeat: space;
+  background-size: cover;
+  text-align: center;
+  font-size: 30px;
+}
+
+footer {
+  grid-area: footer;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 70% 15%;
+      grid-template-columns: 15% 70% 15%;
+  font: 14px;
+}
+
+footer > nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer > nav > ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+footer > nav > ul > li > a {
+  margin: 7px;
+}
+
+footer > a {
+  font-family: 'Montserrat', sans-serif;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+footer > span {
+  font-family: 'Montserrat', sans-serif;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+a > img {
+  width: 20px;
+  height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+li {
+  list-style-type: none;
+}
+/*# sourceMappingURL=stile.css.map */

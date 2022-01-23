@@ -1,0 +1,180 @@
+body {
+  /*font-family: 'Bebas Neue', cursive;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Montserrat', sans-serif;*/
+  display: grid;
+  grid-template-columns: 48% auto;
+  grid-template-rows: 20% 60% 20%;
+  background: rgb(250, 8, 8);
+  margin: 0%;
+  background: url(../img/Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 1024px;
+  min-height: 100vh;
+  color: #000;
+}
+
+section {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-items: end;
+  align-items: end;
+  margin-right: 60px;
+  margin-bottom: 60px;
+}
+section > nav > ul {
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  grid-template-columns: 50% 50%;
+}
+section > nav > ul > li {
+  display: grid;
+}
+section > nav > ul > li > a {
+  display: grid;
+  justify-items: end;
+  align-items: end;
+}
+section > nav > ul > li > a > img {
+  height: 0.337in;
+}
+
+header {
+  display: grid;
+  grid-row: 1/2;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 130px;
+  margin-top: 130px;
+}
+
+.content {
+  display: grid;
+  grid-row: 1/2;
+  margin-bottom: 20px;
+}
+.content > a {
+  display: grid;
+  grid-row: 1/2;
+  background: #000; /* Цвет фона */
+  width: 100px; /* Ширина кнопки */
+  border-radius: 30px;
+  color: #fff;
+  text-align: center;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 9.5pt;
+  padding: 10px;
+}
+header > nav {
+  display: grid;
+  grid-row: 2/3;
+  align-items: end;
+}
+header > nav > ul {
+  display: grid;
+  padding: 0%;
+  grid-template-columns: auto auto auto auto auto;
+}
+header > nav > ul > li {
+  font-size: 9.5pt;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+main {
+  display: grid;
+  grid-row: 2/3;
+  grid-template-rows: auto auto;
+  margin-left: 130px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+main > h1 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  display: grid;
+  grid-row: 1/2;
+  font-size: 26pt;
+  margin: auto auto 15px 0px;
+}
+main > p {
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-row: 2/3;
+  font-size: 9pt;
+  margin: 0% 0% 40px 0%;
+}
+.box {
+  display: grid;
+  grid-row: 3/4;
+  grid-template-columns: 150px 1fr;
+}
+.box > .Vector {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.Vector > img {
+  width: 1.287in;
+}
+.box > .Vector2 {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.Vector2 > img {
+  width: 1.287in;
+}
+
+footer {
+  display: grid;
+  grid-row: 3/4;
+  grid-template-columns: 1fr 30%;
+  margin-left: 130px;
+  margin-bottom: 60px;
+}
+footer > nav {
+  display: grid;
+  align-items: end;
+  justify-self: start;
+}
+footer > nav > ul {
+  display: grid;
+  justify-self: start;
+  padding: 0%;
+  gap: 13px;
+  margin: 0%;
+  grid-template-columns: auto auto auto;
+}
+footer > nav > ul > li > a > img {
+  height: 0.183in;
+  margin: 0%;
+}
+.cont___img {
+  display: grid;
+  align-items: end;
+  justify-self: start;
+}
+.cont {
+  background: url(../img/Outline.png);
+  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: grid;
+  align-items: stretch;
+  justify-self: stretch;
+  width: 1.1in;
+}
+.cont > p {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 12.5pt;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}

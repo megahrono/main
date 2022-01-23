@@ -1,0 +1,600 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url(/fionts/Poppins-Bold.ttf); }
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url(/fionts/Poppins-Medium.ttf); }
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url(/fionts/Poppins-Regular.ttf); }
+@font-face {
+  font-family: 'Poppins-MediumItalic';
+  src: url(/fionts/Poppins-MediumItalic.ttf); }
+.block {
+  overflow-x: hidden;
+  background-color: #e5e5e5;
+  max-width: 1440px;
+  font-family: 'Poppins-Bold', serif;
+  font-size: 14px; }
+  .block header {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    background-color: #fff;
+    padding: 2% 9%;
+    font-size: 16px; }
+    .block header .logo {
+      display: grid;
+      grid-column: 1/2;
+      background-color: #fff; }
+      .block header .logo img {
+        display: grid; }
+      .block header .logo nav {
+        display: grid;
+        grid-column: 2/2; }
+        .block header .logo nav ul {
+          display: grid;
+          grid-template-columns: 30% 25% 45%; }
+          .block header .logo nav ul li {
+            display: grid;
+            list-style-type: none;
+            justify-items: center;
+            align-items: center; }
+            .block header .logo nav ul li a {
+              display: grid;
+              text-decoration: none;
+              color: #777E90; }
+            .block header .logo nav ul li a:hover {
+              color: #000; }
+    .block header .registrations {
+      display: grid;
+      grid-column: 2/3;
+      grid-template-columns: 1fr 20%;
+      align-items: center;
+      justify-items: end; }
+      .block header .registrations .Login {
+        display: grid;
+        grid-column: 1/2;
+        background-color: #2f75fd;
+        border-radius: 24px;
+        text-align: center;
+        color: #fff;
+        height: 100%;
+        padding: 3% 10%;
+        font-size: 14px;
+        border: none; }
+      .block header .registrations nav {
+        display: grid;
+        grid-column: 2/3; }
+        .block header .registrations nav ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr; }
+          .block header .registrations nav ul li {
+            display: grid;
+            list-style-type: none; }
+            .block header .registrations nav ul li button {
+              display: grid;
+              text-decoration: none;
+              padding: 10px;
+              font-size: 14px;
+              align-items: center;
+              border: none;
+              font-family: 'Poppins-Medium', serif;
+              color: #777E90;
+              background-color: #fff; }
+            .block header .registrations nav ul li button:hover {
+              color: #000; }
+  .block .header {
+    font-size: 40px;
+    padding-top: 50px;
+    text-align: center;
+    justify-items: center;
+    align-items: center; }
+  .block .bigPicture {
+    background-image: url(/img/Screenshot.png);
+    display: grid;
+    grid-template-rows: 20% 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    padding-bottom: 120px; }
+    .block .bigPicture .advertising {
+      margin: 50px;
+      display: grid;
+      grid-row: 1/2;
+      grid-template-columns: 1fr 10% 3%;
+      grid-template-rows: 2% 10%;
+      width: 70%;
+      padding: 30px;
+      align-items: center;
+      background-image: url(/img/advertising.png);
+      background-clip: padding-box;
+      background-repeat: no-repeat;
+      background-attachment: inherit;
+      background-position: center;
+      column-gap: 50px; }
+      .block .bigPicture .advertising h3 {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        color: #fff;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-family: Poppins-Bold, serif;
+        font-size: 20px; }
+      .block .bigPicture .advertising p {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        color: #fff;
+        padding-bottom: 30px;
+        font-family: Poppins-Medium, serif;
+        font-size: 14px; }
+      .block .bigPicture .advertising .cry {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        background-color: #fff;
+        border-radius: 24px;
+        text-align: center;
+        color: #2f75fd;
+        padding: 3% 10%;
+        font-size: 14px;
+        border: none;
+        justify-items: center;
+        align-items: center;
+        font-family: Poppins-Bold, serif;
+        font-size: 14px; }
+      .block .bigPicture .advertising .close {
+        display: grid;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background-color: inherit;
+        border-radius: 24px;
+        text-align: center;
+        color: #fff;
+        padding: 3% 10%;
+        font-size: 14px;
+        border: none;
+        height: 10%; }
+    .block .bigPicture h1 {
+      display: grid;
+      grid-row: 2/3;
+      padding-bottom: 80px;
+      font-family: Poppins-Bold, serif;
+      font-size: 64px;
+      color: #fff; }
+    .block .bigPicture .play {
+      display: grid;
+      grid-row: 3/4;
+      margin-bottom: 50px;
+      background-color: #2f75fd;
+      border-radius: 24px;
+      text-align: center;
+      color: #fff;
+      padding: 1% 3%;
+      font-size: 14px;
+      border: none; }
+  .block aside .list {
+    overflow-x: auto;
+    display: flex;
+    gap: 2%;
+    padding: 2%; }
+    .block aside .list .chimeras {
+      text-align: center;
+      border-radius: 16px;
+      background-color: #fff;
+      padding-bottom: 2%; }
+      .block aside .list .chimeras h4 {
+        text-align: center;
+        padding: 1%; }
+      .block aside .list .chimeras p {
+        text-align: center;
+        padding: 1%; }
+      .block aside .list .chimeras button {
+        align-items: center;
+        justify-items: center;
+        border-radius: 12px;
+        color: #fff;
+        margin-top: 5%;
+        background-color: #2f75fd;
+        width: 80%;
+        padding: 4%;
+        border: none;
+        font-size: 16px;
+        font-family: 'Poppins-Medium', serif; }
+  .block aside .TopList {
+    display: flex;
+    padding-top: 100px;
+    gap: 2%;
+    justify-content: center; }
+    .block aside .TopList .chimeras {
+      text-align: center;
+      background-color: #fff;
+      border-radius: 16px;
+      padding-bottom: 2%; }
+      .block aside .TopList .chimeras h4 {
+        text-align: center;
+        padding: 1%; }
+      .block aside .TopList .chimeras p {
+        text-align: center;
+        padding: 1%; }
+      .block aside .TopList .chimeras button {
+        align-items: center;
+        justify-items: center;
+        width: 80%;
+        padding: 4%;
+        border-radius: 12px;
+        color: #fff;
+        margin-top: 5%;
+        background-color: #e6e8ec;
+        border: none;
+        font-size: 16px;
+        font-family: 'Poppins-Medium', serif; }
+  .block main {
+    justify-items: center;
+    align-items: center;
+    background-color: #e5e5e5; }
+    .block main h1 {
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 64px;
+      font-size: 40px;
+      font-family: 'Poppins-Bold', serif; }
+    .block main .Benefits {
+      padding: 0 9%;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr; }
+      .block main .Benefits h4 {
+        font-family: 'Poppins-Bold', serif;
+        font-size: 24px; }
+      .block main .Benefits p {
+        font-family: 'Poppins-Regular', serif;
+        font-size: 16px; }
+      .block main .Benefits .lt {
+        grid-column: 1/2;
+        grid-row: 1/2; }
+      .block main .Benefits .ct {
+        grid-column: 2/3;
+        grid-row: 1/2; }
+      .block main .Benefits .rt {
+        grid-column: 3/4;
+        grid-row: 1/2; }
+      .block main .Benefits .lb {
+        grid-column: 1/2;
+        grid-row: 2/3; }
+      .block main .Benefits .cb {
+        grid-column: 2/3;
+        grid-row: 2/3; }
+      .block main .Benefits .rb {
+        grid-column: 3/4;
+        grid-row: 2/3; }
+      .block main .Benefits .lt,
+      .block main .Benefits .ct,
+      .block main .Benefits .rt,
+      .block main .Benefits .lb,
+      .block main .Benefits .cb,
+      .block main .Benefits .rb {
+        display: grid;
+        text-align: center;
+        justify-items: center;
+        gap: 3%;
+        background-color: #ffffff;
+        padding: 10%;
+        border-radius: 16px; }
+    .block main .box-0 {
+      display: grid;
+      padding: 100px 9% 0;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 50px; }
+      .block main .box-0 .box-1 {
+        grid-column: 1/2; }
+      .block main .box-0 .box-2 {
+        grid-column: 2/3; }
+      .block main .box-0 .box-3 {
+        grid-column: 3/4; }
+      .block main .box-0 .box-4 {
+        grid-column: 4/5; }
+      .block main .box-0 .box-1,
+      .block main .box-0 .box-2,
+      .block main .box-0 .box-3,
+      .block main .box-0 .box-4 {
+        display: grid;
+        text-align: center;
+        background-color: #ffffff;
+        padding: 10%;
+        justify-items: center;
+        align-items: center;
+        gap: 33px;
+        border-radius: 16px; }
+        .block main .box-0 .box-1 h2,
+        .block main .box-0 .box-2 h2,
+        .block main .box-0 .box-3 h2,
+        .block main .box-0 .box-4 h2 {
+          font-family: 'Poppins-Bold', serif;
+          font-size: 24px; }
+        .block main .box-0 .box-1 p,
+        .block main .box-0 .box-2 p,
+        .block main .box-0 .box-3 p,
+        .block main .box-0 .box-4 p {
+          font-family: 'Poppins-Regular', serif;
+          font-size: 16px; }
+    .block main .map {
+      display: grid;
+      padding-top: 100px;
+      grid-template-columns: 20% 30% 25%;
+      text-align: center;
+      grid-gap: 50px;
+      padding-bottom: 100px; }
+      .block main .map h1 {
+        text-align: center;
+        display: grid;
+        grid-column: 1/5;
+        padding-bottom: 50px;
+        font-family: 'Poppins-Bold', serif;
+        font-size: 32px; }
+      .block main .map .map-1 {
+        grid-column: 1/2; }
+      .block main .map .map-2 {
+        grid-column: 2/3; }
+      .block main .map .map-3 {
+        grid-column: 3/4; }
+      .block main .map .blockMap {
+        height: 300px;
+        display: grid;
+        grid-column: 1/5; }
+        .block main .map .blockMap .map {
+          background-clip: padding-box;
+          background-repeat: no-repeat;
+          background-attachment: inherit;
+          background-position: center;
+          background-image: url(/img/xp.png); }
+      .block main .map .map-4 {
+        grid-column: 1/2; }
+      .block main .map .map-5 {
+        grid-column: 2/3; }
+      .block main .map .map-6 {
+        grid-column: 3/4; }
+      .block main .map .map-1,
+      .block main .map .map-2,
+      .block main .map .map-3,
+      .block main .map .map-4,
+      .block main .map .map-5,
+      .block main .map .map-6 {
+        display: grid;
+        background-color: #ffffff;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        gap: 22px;
+        border-radius: 16px;
+        padding: 10%; }
+        .block main .map .map-1 h2,
+        .block main .map .map-2 h2,
+        .block main .map .map-3 h2,
+        .block main .map .map-4 h2,
+        .block main .map .map-5 h2,
+        .block main .map .map-6 h2 {
+          font-family: 'Poppins-Bold', serif;
+          font-size: 20px; }
+        .block main .map .map-1 p,
+        .block main .map .map-2 p,
+        .block main .map .map-3 p,
+        .block main .map .map-4 p,
+        .block main .map .map-5 p,
+        .block main .map .map-6 p {
+          font-family: 'Poppins-MediumItalic', serif;
+          font-size: 16px; }
+    .block main h1 {
+      text-align: center;
+      padding-top: 100px;
+      font-family: Poppins-Bold, serif;
+      font-size: 32px; }
+    .block main .parthers {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      align-items: center;
+      justify-items: center;
+      background-color: #e5e5e5; }
+      .block main .parthers button {
+        display: grid;
+        border: none;
+        background-color: #e5e5e5;
+        width: 90%;
+        height: 100%;
+        padding: 30% 0;
+        align-items: center;
+        justify-items: center; }
+      .block main .parthers button:hover {
+        filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.73));
+        text-decoration: none;
+        border-radius: 24px;
+        font-size: 14px;
+        align-items: center;
+        border: none; }
+    .block main .team {
+      text-align: center; }
+    .block main .team-0 {
+      padding-top: 50px;
+      display: grid;
+      grid-template-columns: 10% 20% 20% 20% 20% 10%;
+      justify-items: center;
+      align-items: center; }
+      .block main .team-0 button {
+        align-items: center;
+        justify-items: center;
+        width: 80%;
+        padding: 4%;
+        border-radius: 12px;
+        color: #fff;
+        margin-top: 5%;
+        background-color: #e6e8ec;
+        border: none;
+        font-size: 16px;
+        font-family: 'Poppins-Medium', serif; }
+      .block main .team-0 .Left {
+        background-color: saddlebrown; }
+      .block main .team-0 .team-1 {
+        grid-column: 2/3; }
+      .block main .team-0 .team-2 {
+        grid-column: 3/4; }
+      .block main .team-0 .team-3 {
+        grid-column: 4/5; }
+      .block main .team-0 .team-4 {
+        grid-column: 5/6; }
+      .block main .team-0 img {
+        width: 100%; }
+      .block main .team-0 .team-1,
+      .block main .team-0 .team-2,
+      .block main .team-0 .team-3,
+      .block main .team-0 .team-4 {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        padding: 5%; }
+        .block main .team-0 .team-1 h3,
+        .block main .team-0 .team-2 h3,
+        .block main .team-0 .team-3 h3,
+        .block main .team-0 .team-4 h3 {
+          padding: 1% 0;
+          font-family: 'Poppins-Bold', serif;
+          font-size: 20px; }
+        .block main .team-0 .team-1 p,
+        .block main .team-0 .team-2 p,
+        .block main .team-0 .team-3 p,
+        .block main .team-0 .team-4 p {
+          font-family: 'Poppins-Medium', serif;
+          font-size: 16px; }
+  .block footer {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center; }
+    .block footer nav {
+      display: grid; }
+      .block footer nav ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center; }
+        .block footer nav ul li {
+          list-style-type: none;
+          padding: 0 12px; }
+    .block footer p {
+      font-family: 'Poppins-Medium', serif;
+      font-size: 14px; }
+  @media screen and (max-width: 1100px) {
+    .block {
+      max-width: 1080px; }
+      .block .blockMap .map {
+        background-size: 90%; } }
+  @media screen and (max-width: 600px) {
+    .block {
+      max-width: 586px;
+    /*.bigPicture {
+      display: grid;
+      grid-template-rows: 1fr 10% 10%;
+      width: 100%;
+      .advertising {
+        margin: 0;
+        padding: 0;
+        width: 80%;
+        gap: 0;
+        background-size: 0 100%;
+        grid-template-rows: 10% 50% 10%;
+        grid-template-columns: 1fr 1fr;
+        h3 {
+          display: grid;
+          grid-column: 1/2;
+          group-reset: 1/2;
+         text-align: center;
+        }
+        p{
+          display: grid;
+          grid-column: 1/2;
+          group-reset: 2/3;
+          text-align: center;
+          background-color: cornflowerblue;
+        }
+        .cry{
+          display: grid;
+          grid-column: 1/2;
+          group-reset: 3/4;
+          text-align: center;
+          background-color: crimson;
+        }
+        .close{
+          display: grid;
+          grid-column: 2/3;
+          group-reset: 1/2;
+        }
+
+      }
+      h1 {
+        padding-bottom: 30px;
+      }
+
+    }*/ }
+      .block .bigPicture {
+        display: flex;
+        flex-direction: column; }
+        .block .bigPicture .advertising {
+          display: block; }
+          .block .bigPicture .advertising h1 {
+            display: flex;
+            text-align: center;
+            flex-direction: column; }
+          .block .bigPicture .advertising p {
+            display: flex;
+            text-align: center;
+            flex-direction: column; }
+          .block .bigPicture .advertising .cry {
+            display: flex;
+            flex-direction: column; }
+          .block .bigPicture .advertising .close {
+            position: relative;
+            right: 0; }
+      .block main .Benefits {
+        display: flex;
+        flex-direction: column; }
+      .block main .parthers {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-items: center; }
+        .block main .parthers button {
+          padding: 0; }
+      .block main .blockMap {
+        height: 300px;
+        display: grid;
+        grid-column: 1/5; }
+        .block main .blockMap .map {
+          background-clip: padding-box;
+          background-repeat: no-repeat;
+          background-attachment: inherit;
+          background-position: center;
+          background-image: url(/img/1.png); }
+      .block main .team-0 {
+        overflow-y: auto;
+        display: flex; }
+        .block main .team-0 img {
+          width: auto;
+          max-height: 100%;
+          min-height: 100%; }
+      .block footer {
+        display: flex;
+        flex-direction: column;
+        gap: 50px; } }
+  .block button:active {
+    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.73)); }
+
+/*# sourceMappingURL=stile.css.map */

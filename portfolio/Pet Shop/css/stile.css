@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'MADETommySoft';
+  src: url(../fonts/MADETommySoftMediumOutlinePERSONALUSE.otf);
+  src: url(../fonts/MADETommySoftMediumPERSONALUSE.otf);
+}
+
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url(../fonts/Montserrat-Black.otf);
+  src: url(../fonts/Montserrat-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url(../fonts/Montserrat-SemiBold.otf);
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Acme-Regular';
+  src: url(../fonts/Acme-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+  color: #333333;
+  display: -ms-grid;
+  display: grid;
+  background-image: url(../img/fon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 1024px;
+  min-height: 100vh;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding-right: 30px;
+}
+
+header .logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  justify-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 80px;
+}
+
+header .logo img {
+  height: 30%;
+}
+
+header nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  justify-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+header nav ul li {
+  display: -ms-grid;
+  display: grid;
+  padding-left: 40px;
+  margin: 0px;
+}
+
+header nav ul li a {
+  display: -ms-grid;
+  display: grid;
+  font-size: 12pt;
+  font-family: 'MADETommySoft';
+  text-align: center;
+  height: 35px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  justify-items: end;
+  padding-right: 30px;
+}
+
+main h1 {
+  display: -ms-grid;
+  display: grid;
+  font-size: 39.35pt;
+  text-align: right;
+  font-family: 'Montserrat-Black';
+  letter-spacing: 2pt;
+}
+
+main .line {
+  background-color: #00b4ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 310px;
+  height: 10px;
+  z-index: 10;
+}
+
+main h2 {
+  display: -ms-grid;
+  display: grid;
+  padding: 30px 0px 10px 0px;
+  font-size: 19.68pt;
+  font-family: 'Roboto-Bold';
+  letter-spacing: 1pt;
+}
+
+main p {
+  display: -ms-grid;
+  display: grid;
+  text-align: right;
+  font-size: 9.84pt;
+  font-family: 'Roboto-Regular';
+  letter-spacing: 1pt;
+}
+
+main a {
+  display: -ms-grid;
+  display: grid;
+  font-size: 9.83pt;
+  padding-top: 20px;
+  font-family: 'Montserrat-SemiBold';
+  letter-spacing: 1pt;
+}
+
+main nav {
+  display: -ms-grid;
+  display: grid;
+}
+
+main nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main nav ul li {
+  display: -ms-grid;
+  display: grid;
+}
+
+main nav ul li a {
+  display: -ms-grid;
+  display: grid;
+}
+
+main nav ul li a img {
+  display: -ms-grid;
+  display: grid;
+  width: 20px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  justify-items: end;
+  padding: 100px 30px 100px 0px;
+}
+
+footer a {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+footer a p {
+  display: -ms-grid;
+  display: grid;
+  font-size: 14pt;
+  font-family: 'Acme-Regular';
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding-right: 20px;
+  letter-spacing: 1pt;
+}
+
+footer a img {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  width: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+li {
+  list-style-type: none;
+}
+/*# sourceMappingURL=stile.css.map */

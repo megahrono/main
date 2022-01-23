@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(196, 193, 193);
+}
+main {
+  text-align: center;
+  display: grid;
+  flex-direction: column;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: rgb(196, 193, 193);
+  height: 100%;
+  padding: 0px 100px 0px 100px;
+
+  h4 {
+    text-align: center;
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .box1 {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 30px;
+    width: 200px;
+    #domTextElement {
+      font-size: 20px;
+    }
+  }
+  .box2 {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 30px;
+    width: 200px;
+    #domText {
+      font-size: 20px;
+    }
+  }
+  #SelectMyLove:hover {
+    background-color: rgb(114, 98, 252);
+  }
+  #SelectMyLove {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  #SelectMyLove:hover {
+    background-color: rgb(114, 98, 252);
+  }
+  #SelectMy {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin-top: 20px;
+    width: 200px;
+    font-size: 15px;
+  }
+  #SelectMy:hover {
+    background-color: rgb(114, 98, 252);
+  }
+  .button {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 20px;
+  }
+  .button:hover {
+    background-color: rgb(98, 252, 119);
+  }
+  section {
+    display: grid;
+    grid-row: 5/6;
+    grid-column: 1/3;
+    justify-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+    h1 {
+      display: grid;
+      justify-items: center;
+    }
+    p {
+      margin-top: 10px;
+    }
+  }
+}

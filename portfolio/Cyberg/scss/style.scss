@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans.ttf);
+}
+
+body {
+  background-image: url(../img/Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 1024px;
+  min-height: 100vh;
+  display: grid;
+  padding: auto;
+  color: #fff;
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr 35% 15%;
+    padding-top: 50px;
+    .logo {
+      display: grid;
+      grid-column: 1/2;
+      padding-left: 50px;
+      height: 30px;
+    }
+    .navigation {
+      display: grid;
+      grid-column: 2/3;
+      padding-right: 30px;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        li {
+          justify-items: center;
+          align-items: center;
+          display: grid;
+          a {
+            font-size: 10pt;
+            font-family: 'OpenSans';
+          }
+          a:hover {
+            font-weight: 900;
+          }
+        }
+      }
+    }
+    .messenger {
+      display: grid;
+      grid-column: 3/4;
+      padding-right: 50px;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        li {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          a {
+          }
+          img {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+  main {
+    padding: 50px 0px 50px 100px;
+    h1 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 54.36pt;
+      letter-spacing: 5px;
+      .thin {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        font-size: 54.36pt;
+        letter-spacing: 5px;
+        font-weight: 100;
+      }
+    }
+    .text {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      font-size: 12pt;
+      line-height: 1.5;
+      font-family: 'OpenSans';
+    }
+    .button {
+      background-color: #3599e7;
+      border-radius: 30px;
+      font-size: 14pt;
+      text-decoration: none;
+      font-family: 'OpenSans';
+      font-weight: bold;
+      padding: 5px 40px;
+    }
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}

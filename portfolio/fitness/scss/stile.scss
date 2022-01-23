@@ -1,0 +1,139 @@
+body {
+  color: #fff;
+  margin: 0%;
+}
+.box {
+  background: url(../img/4156728.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 1024px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 60% 20%;
+  clear: both;
+}
+header {
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: auto 105px;
+  font: 14px 'Noto Sans', sans-serif;
+}
+.navigetion {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: end;
+  margin-top: 62px;
+  gap: 120px;
+  width: auto;
+  padding: 1%;
+  border-bottom: 1px solid #fff;
+}
+.logo {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 105px;
+  height: 105px;
+}
+
+main {
+  align-self: unset;
+  grid-row: 2/3;
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr 410px;
+  font: 14px 'Montserrat';
+}
+article {
+  display: grid;
+  grid-column: 2/3;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: start;
+  margin-right: 100px;
+}
+h1 {
+  font-size: 30px;
+  display: grid;
+  grid-row: 1/2;
+  align-items: end;
+  justify-self: center;
+  margin: 0%;
+}
+p {
+  display: grid;
+  grid-row: 2/3;
+  text-align: center;
+  align-items: start;
+  justify-self: center;
+  margin: 30px 0% 30px 0%;
+}
+
+.button {
+  font-family: 'Raleway', sans-serif;
+  display: grid;
+  grid-row: 3/4;
+  justify-self: stretch;
+  align-items: center;
+  background: url(../img/Shape_png.png) center no-repeat;
+  height: 100%;
+  background-repeat: space;
+  background-size: cover;
+  text-align: center;
+  font-size: 30px;
+}
+
+footer {
+  grid-area: footer;
+  grid-row: 3/4;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  font: 14px;
+}
+footer > nav {
+  display: grid;
+  grid-column: 1/2;
+  justify-items: center;
+  align-items: center;
+}
+footer > nav > ul {
+  margin: 0px;
+  padding: 0px;
+}
+footer > nav > ul > li > a {
+  margin: 7px;
+}
+footer > a {
+  font-family: 'Montserrat', sans-serif;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-column: 2/3;
+}
+footer > span {
+  font-family: 'Montserrat', sans-serif;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-column: 3/4;
+}
+
+a > img {
+  width: 20px;
+  height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+li {
+  list-style-type: none;
+}

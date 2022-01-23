@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/stili.css">
+    <title>Document</title>
+</head>
+<body>
+<main>
+<h4>
+    Калькулятор транспортного налога
+</h4>
+<div class="box1">
+<label for="domTextElement">Лошадиные силы: </label>
+<input type="text" id="domTextElement" >
+</div>
+<div class="box2">
+<label for="domText">Cрок владения: </label>
+<input type="text" id="domText" >
+</div>
+ <SELECT name="SelectMyLove" id="SelectMyLove" >
+        <OPTION  SELECTED VALUE="0">Выберите вид ТС</OPTION>
+        <OPTION  VALUE="1">Автомобили легковые</OPTION>
+        <OPTION VALUE="2">Мотоциклы и мотороллеры</OPTION>
+        <OPTION VALUE="3">Автобусы</OPTION>
+        <OPTION VALUE="4">Грузовые автомобили</OPTION>
+     <OPTION VALUE="5">Другие самоходные транспортные средства,
+         машины и механизмы на пневматическом и гусеничном ходу</OPTION>
+     <OPTION VALUE="6">Снегоходы, мотосани</OPTION>
+     <OPTION VALUE="7">Катера, моторные лодки и другие водные
+         транспортные средства</OPTION>
+     <OPTION VALUE="8">Яхты и другие парусно-моторные суда</OPTION>
+     <OPTION VALUE="9">Гидроциклы</OPTION>
+     <OPTION VALUE="10">Несамоходные (буксируемые) суда, для
+         которых определяется валовая вместимость
+         (с каждой регистровой тонны валовой вместимости)</OPTION>
+     <OPTION VALUE="11">Самолеты, вертолеты и иные воздушные суда,
+         имеющие двигатели (с каждой лошадиной силы)</OPTION>
+     <OPTION VALUE="12">Самолеты, имеющие реактивные двигатели
+         (с каждого килограмма силы тяги)</OPTION>
+     <OPTION VALUE="13">Другие водные и воздушные транспортные
+         средства, не имеющие двигателей (с единицы транспортного
+         средства)</OPTION>
+    </SELECT>
+<SELECT name="SelectMyLove" id="SelectMy" >
+    <OPTION  SELECTED VALUE="0">Выберите город</OPTION>
+    <OPTION  VALUE="1">Нижний Новгород</OPTION>
+    <OPTION VALUE="2">Москва</OPTION>
+    <OPTION VALUE="3">Екатеринбург</OPTION>
+</SELECT>
+
+<button class="button" type="button"  onclick="getValueInput()">
+     click me!!
+     </button>
+
+<section>
+    <h1>Итог</h1>
+<p id="rub"></p>
+<p id="valueInput"></p>
+</main>
+<script src="Nalog___js.js"></script>
+</body>
+</html>

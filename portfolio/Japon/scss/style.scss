@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+$red: #a80518;
+@font-face {
+  font-family: 'FredokaOne-Regular';
+  src: url(../fonts/FredokaOne-Regular.otf);
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+body {
+  background-image: url(../img/Design.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $red;
+  margin: 0;
+  padding: 0;
+
+  .cont {
+    //min-width: 1024px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 50% auto;
+    margin-right: 5%;
+    header {
+      display: grid;
+      justify-items: end;
+      padding-top: 5%;
+      grid-row: 1/2;
+      align-items: center;
+      img {
+        height: 35%;
+      }
+    }
+    main {
+      display: grid;
+      justify-items: end;
+      grid-row: 2/3;
+      padding-top: 5%;
+      h1 {
+        display: grid;
+        color: $red;
+        text-align: right;
+        font-family: 'FredokaOne-Regular';
+        font-size: 60px;
+        letter-spacing: 5px;
+      }
+      h3 {
+        display: grid;
+        margin-top: 1%;
+        color: #391a1e;
+        font-family: 'FredokaOne-Regular';
+        letter-spacing: 2px;
+        font-size: 15.5pt;
+        background-image: url(../img/Shape.png);
+        background-size: 100% 100%;
+        width: 20%; //250
+        justify-items: center;
+        align-items: center;
+      }
+      p {
+        display: grid;
+        padding-top: 2%;
+        text-align: right;
+        font-family: 'Montserrat-Medium';
+        font-size: 10pt;
+      }
+    }
+    footer {
+      display: grid;
+      justify-items: end;
+      grid-row: 3/4;
+      padding-top: 8%;
+      grid-template-rows: 20% auto;
+      a {
+        display: grid;
+        font-family: 'Montserrat-Medium';
+        font-size: 10pt;
+        grid-row: 1/2;
+      }
+      nav {
+        display: grid;
+        grid-row: 2/3;
+        width: 10%;
+        ul {
+          display: grid;
+          grid-template-columns: 25% 25% 25% 25%;
+          justify-items: end;
+          li {
+            display: grid;
+            margin-left: 10px;
+            justify-items: end;
+            a {
+              display: grid;
+              justify-items: end;
+              img {
+                display: grid;
+                justify-items: end;
+                width: 100%; //25px
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+@media screen and (max-width: 3900px) {
+  .cont {
+    max-width: 3840px;
+  }
+}
+@media screen and (max-width: 2600px) {
+  .cont {
+    max-width: 2560px;
+  }
+}
+@media screen and (max-width: 2100px) {
+  .cont {
+    max-width: 2048px;
+  }
+}
+@media screen and (max-width: 1950px) {
+  .cont {
+    max-width: 1920px;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .cont {
+    max-width: 1680px;
+  }
+}
+@media screen and (max-width: 1620px) {
+  .cont {
+    max-width: 1600px;
+  }
+}
+@media screen and (max-width: 1460px) {
+  .cont {
+    max-width: 1440;
+  }
+}
+@media screen and (max-width: 1420px) {
+  .cont {
+    max-width: 1400px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .cont {
+    max-width: 1366px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .cont {
+    max-width: 1280px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .cont {
+    max-width: 1152px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .cont {
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .cont {
+    max-width: 800px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .cont {
+    max-width: 640px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .cont {
+    max-width: none;
+  }
+}

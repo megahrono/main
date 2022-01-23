@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans.ttf);
+}
+
+body {
+  background-image: url(../img/Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  max-width: 1028px;
+  display: -ms-grid;
+  display: grid;
+  padding: auto;
+  color: #fff;
+}
+
+body header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 35% 15%;
+      grid-template-columns: 1fr 35% 15%;
+  padding-top: 50px;
+}
+
+body header .logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  padding-left: 50px;
+  height: 30px;
+}
+
+body header .navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  padding-right: 30px;
+}
+
+body header .navigation ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+body header .navigation ul li {
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+body header .navigation ul li a {
+  font-size: 10pt;
+  font-family: 'OpenSans';
+}
+
+body header .navigation ul li a:hover {
+  font-weight: 900;
+}
+
+body header .messenger {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  padding-right: 50px;
+}
+
+body header .messenger ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+body header .messenger ul li {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .messenger ul li img {
+  width: 20px;
+}
+
+body main {
+  padding: 50px 0px 50px 100px;
+}
+
+body main h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 54.36pt;
+  letter-spacing: 5px;
+}
+
+body main h1 .thin {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 54.36pt;
+  letter-spacing: 5px;
+  font-weight: 100;
+}
+
+body main .text {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 12pt;
+  line-height: 1.5;
+  font-family: 'OpenSans';
+}
+
+body main .button {
+  background-color: #3599e7;
+  border-radius: 30px;
+  font-size: 14pt;
+  text-decoration: none;
+  font-family: 'OpenSans';
+  font-weight: bold;
+  padding: 5px 40px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

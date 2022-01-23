@@ -1,0 +1,120 @@
+body {
+  background-image: url(../img/4156728.png);
+  background-repeat: space;
+  background-size: cover;
+  color: red;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+.logo {
+  display: flex;
+  width: 105px;
+  height: 105px;
+}
+.navigetion {
+  width: 385px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #fff;
+  border-width: 0px 0px 2px 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.navigetion > li {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+.navigetion > li > a {
+  color: #fff;
+  font-size: 15pt;
+}
+
+main {
+  height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+.cont {
+  width: auto;
+  margin: 60px 95px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.h1 {
+  font-size: 30pt;
+  display: flex;
+  justify-content: center;
+}
+.text {
+  font-size: 14pt;
+  display: flex;
+  justify-content: center;
+}
+.contener {
+  display: flex;
+  justify-content: center;
+  background: url(../img/Shape_png.png) center no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  background-size: 190px 77px;
+  height: 77px;
+}
+.button {
+  color: #fff;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  text-decoration: none;
+}
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+a {
+  text-decoration: none;
+}
+a > img {
+  width: 20px;
+  height: 20px;
+}
+ul {
+  list-style: none;
+}
+.footer___ul {
+  display: flex;
+  justify-items: center;
+  padding: 0px;
+  margin: 10px;
+}
+.footer___ul > li {
+  margin: 5px;
+}
+footer > nav {
+  display: grid;
+  justify-self: center;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.www {
+  display: grid;
+  justify-self: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+footer > span {
+  align-self: end;
+  display: grid;
+  justify-self: center;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}

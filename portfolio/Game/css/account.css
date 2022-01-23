@@ -1,0 +1,10 @@
+body {
+  background-color: blue; }
+  body header {
+    display: flex; }
+    body header .blockLeft {
+      display: flex; }
+      body header .blockLeft .logo {
+        display: flex; }
+
+/*# sourceMappingURL=account.css.map */

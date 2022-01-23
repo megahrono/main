@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,IAAI;CAkCvB;;AAnCD,AAGE,IAHE,CAGF,MAAM,CAAC;EACL,OAAO,EAAE,IAAI;CA8Bd;;AAlCH,AAMI,IANA,CAGF,MAAM,CAGJ,UAAU,CAAC;EACT,OAAO,EAAE,IAAI;CAKd;;AAZL,AASM,IATF,CAGF,MAAM,CAGJ,UAAU,CAGR,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "../portfolio/Game/css/account.scss"
+    ],
+    "names": [],
+    "file": "account.css"
+}

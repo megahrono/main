@@ -1,0 +1,36 @@
+body {
+  background-color: blue;
+
+  header {
+    display: flex;
+
+    .blockLeft {
+      display: flex;
+
+      .logo {
+        display: flex;
+      }
+    }
+
+    .blockRigt {
+      nav {
+        li {
+        }
+
+        .account {
+          li {
+            img {
+            }
+
+            h3 {
+            }
+
+            button {
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
